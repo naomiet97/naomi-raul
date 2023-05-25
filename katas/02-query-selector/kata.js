@@ -1,5 +1,6 @@
 export function kata() {
-  const section2 = document.querySelectorAll("section")[1];
-  const p = section2.querySelector("p");
+  const p = document.querySelector("section:nth-child(2) p");
   p.classList.add("star-wars");
 }
+
+//Otra forma más optima: cambiar el selector para que elija el parrafo p dentro de la segunda sección
