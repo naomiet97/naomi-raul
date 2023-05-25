@@ -1,11 +1,12 @@
 export function kata() {
-  const allSections = document.querySelectorAll("section");
+  const allTitles = document.querySelectorAll("section h2");
 
-  for (let i = 0; i < allSections.length; i++) {
-    const h2 = allSections[i].querySelectorAll("h2");
-
-    for (let j = 0; j < h2.length; j++) {
-      h2[j].classList.add("title");
-    }
+  // for (let i = 0; i < allTitles.length; i++) {
+  //   allTitles[i].classList.add("title");
+  // }
+  
+  for (const title of allTitles) {
+    title.classList.add("title");
+    
   }
 }
